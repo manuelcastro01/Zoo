@@ -62,6 +62,13 @@
        });
  }
 
+ function ConsultAllAnimals(){
+   window.location.href = "showallanimals.php";
+ }
+ function ConsultAllEmployees(){
+   window.location.href = "showallemployees.php";
+ }
+
  </script>
 
 
