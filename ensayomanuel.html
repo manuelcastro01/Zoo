@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" href="design.css">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&?family=Poppins&family=Open+Sans&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+<script type="text/javascript">
+
+function ingresar(){
+  name = document.getElementById('user').value;
+  pw = document.getElementById('pw').value;
+
+  if(name == "ZooAdmin" && pw == "123"){
+    window.location.href = "admin.php";
+  }
+}
+
+</script>
+
+
+</head>
+
+
+<body >
+
+<p class="tituloensayo ">Why virtualization is important in production environments? </p>
+<p class="tituloensayo" style="font-size:100%;">By Manuel Castro </p>
+<p class="contenidoensayo">Nowadays the term “virtualization” has been retrieved many times, becoming in a popular technology among tech enthusiast and IT experts, but what does virtualization mean? Well, according with opensource.com, virtualization is the process of running a virtual instance of a computer system in a layer abstracted from the actual hardware, and maybe it can remember you to the Virtual Machines, and yes, it is the same principle. The main difference between a Virtual Machine and virtualization as a concept is that you will not need the full operative system image to use the code you built, and it can help you to save space, resources and sure, money. In this essay some key points will be superficially explained and will show how virtualization is a good alternative for production environments.<br><br>
+
+
+Efficiency and cost optimization are one of the most important factors when deploying an application to production environments, as mentioned above creating a virtual machine could be an option, but what happens when you have many apps that demand different hardware resources? You will need as many virtual machines as apps you have and that could represent a huge problem for scalability, because even you create a virtual machine with a bounded resources you will have a gap between the actual hardware capabilities and the hardware consumption, and this is one reason virtualization (and specially containers) are being so popular, because you can use a single virtual machine as a “ship” to load the containers on, and each container will use the hardware resources they need, without creating many VMs.<br><br>
+The concept of container refers to the way you “pack” an application and all the thinks the application will need to run successfully, for example, if you have a NodeJS app integrated with SQL server you will need to download those software and frameworks to replicate what developers did in their own machines, and this could take many time or effort due to some reproducibility issues that are not often reported.<br><br>
+According with Taylor K. (2022) the main advantages of virtualization are related with hardware efficiency, availability, and the facility it has when is used, deployed, or migrated from on-premises computing to cloud computing or vice versa. If we think on this, you should remember when you faced many obstacles while building an application, creating instances, setting up variable paths, downloading libraries and more, and this is in your computer, now imagine doing this in a server several miles away with a different operative system and without a graphical interface that allows you to click on “next”. This kind of problems raised with server-based architectures, and now, due to virtualization we can solve (at least partially) these problems. For example, if you want to deploy a Perl app, most servers allow you to execute directly your code, but what about modules, well you can create a docker image with all modules and dependences you need for that specific application, and create as many images as you application you will need, and the best: you will need just one (or a few quantity) of virtual machines that run your app, allowing the to take advantage of the server hardware and capabilities. Another example can be appreciated when you have multiple apps that are used in different times one at the morning, and other at the noon, even you can have a single server for each one, you can use just one instead, and  deploy your containers there, and you will pay just one 99.99% availability server that will be used when required instead of using two and wasting the rest of the time you are paying for.<br><br>
+By other side, there are some aspects where virtualization does not win in an entrepreneurial field, for example if we talk about the initial investment, it will be high, because even migration could be easy, the new personal and knowledge needed to create and migrate the current architecture to a container-based one could be expensive for an organization. Other problems virtualization could face in this environment is how the manage the data, because it could get compromised in some security concerns compliance and can be modified or hijacked while being virtualized, in some cases it could become useless due to a bad database definition or migration. Although virtualization helps with apps deployment, you will se some problems when the containers get larger, and you will have to move your apps making difficult to scale your projects.<br><br>
+To conclude, virtualization propose an interesting alternative for application deployments that could help organizations to save money and generally be more efficient in production environments even it could carry some scalability and data security issues. Containers can be used as a new look up of virtualization that solve some server related problems but naturally charge others to the basket.
+</p>
+
+
+<p class="tituloensayo" style="font-size:190%;">References </p>
+<p class="contenidoensayo">
+  OpenSource redaction team. (2022). What is virtualization?. Taken from: <a href="https://opensource.com/resources/virtualization"> https://opensource.com/resources/virtualization</a><br><br>
+  Taylor K. (2022). What are the Pros and Cons of Virtualization? Taken from: <a href="https://www.hitechnectar.com/blogs/pros-cons-virtualization/"> https://www.hitechnectar.com/blogs/pros-cons-virtualization/</a><br><br><br><br><br><br><br><br><br><br></p>
+
+</body>
+</html>

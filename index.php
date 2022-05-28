@@ -46,7 +46,10 @@
      <input type="text" class="inputfield"  placeholder="Username" name ="user" id = "user"/> </br></br>
      <input type="password" class="inputfield"  placeholder="Password" name ="pw" id = "pw"/></br></br></br></br>
 
-     <div class="button" onclick="ingresar()">Log In</div>
+     <div class="button" onclick="ingresar()">Log In</div></br></br></br></br></br></br>
+
+     <a href="ensayocristian.html">Ensayo Cristian </a></br></br>
+     <a href="ensayomanuel.html">Ensayo Manuel </a>
 
 
 
