@@ -17,7 +17,7 @@
 
 
       $.ajax({
-              url:'https://ap-zoo-employee-api.herokuapp.com/readEmployees',
+              url:'https://ap-zoo-api-gateway.herokuapp.com/employeeService/readEmployees',
               type:'get',
               success:function(data){
 

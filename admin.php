@@ -56,7 +56,7 @@
 
    //const obj = JSON.parse(text);
    $.ajax({
-           url:'https://ap-zoo-animal-api.herokuapp.com/createAnimal',
+           url:'https://ap-zoo-api-gateway.herokuapp.com/animalService/createAnimal',
            type:'post',
            data:obj,
            success:function(data){
@@ -86,7 +86,7 @@
 
 
    $.ajax({
-           url:'https://ap-zoo-employee-api.herokuapp.com/createEmployee',
+           url:'https://ap-zoo-api-gateway.herokuapp.com/employeeService/createEmployee',
            type:'post',
            data:obj,
            success:function(data){
@@ -117,7 +117,7 @@
 
 
    $.ajax({
-           url:'https://ap-zoo-employee-api.herokuapp.com/updateEmployee',
+           url:'https://ap-zoo-api-gateway.herokuapp.com/animalService/updateAnimal',
            type:'put',
            data:obj,
            success:function(data){

@@ -17,7 +17,7 @@
 
 
       $.ajax({
-              url:'https://ap-zoo-animal-api.herokuapp.com/readAnimals',
+              url:'https://ap-zoo-api-gateway.herokuapp.com/animalService/readAnimals',
               type:'get',
               success:function(data){
 
