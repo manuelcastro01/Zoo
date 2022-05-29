@@ -117,7 +117,7 @@
 
 
    $.ajax({
-           url:'https://ap-zoo-api-gateway.herokuapp.com/animalService/updateAnimal',
+           url:'https://ap-zoo-api-gateway.herokuapp.com/employeeService/updateEmployee',
            type:'put',
            data:obj,
            success:function(data){
@@ -146,7 +146,7 @@
 
 
    $.ajax({
-           url:'https://ap-zoo-animal-api.herokuapp.com/updateAnimal',
+           url:'https://ap-zoo-api-gateway.herokuapp.com/animalService/updateAnimal',
            type:'put',
            data:obj,
            success:function(data){
